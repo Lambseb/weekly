@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Griffy&display=swap");
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.last_article {
+  background-color: #ed7f10;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+h2 {
+  font-family: Creepster;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 3rem;
+  margin: auto;
+  padding: 0.2rem 0 0.2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  animation: vibe 5s infinite;
+}
+.product_list div {
+  border-radius: 6% 94% 3% 97% / 96% 6% 94% 4%;
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: Griffy;
+  font-size: 1.2rem;
+  text-align: center;
+  animation: backgroundlight 15s infinite;
+  overflow: hidden;
+}
+@keyframes backgroundlight {
+  0% {
+    box-shadow: 2px 2px 10px rgba(75, 0, 130, 1);
+  }
+  20% {
+    box-shadow: 2px 2px 10px #ed7f10;
+  }
+  40% {
+    box-shadow: 2px 2px 10px rgba(75, 0, 130, 1);
+  }
+  60% {
+    box-shadow: 2px 2px 10px #ed7f10;
+  }
+  80% {
+    box-shadow: 2px 2px 10px rgba(75, 0, 130, 1);
+  }
+  100% {
+    box-shadow: 2px 2px 10px #ed7f10;
+  }
+}
+
+@keyframes vibe {
+  0% {
+    letter-spacing: 0;
+    text-shadow: 0px 0px 5px #ed7f10;
+    text-shadow: -2px -2px 5px #ed7f10;
+    text-shadow: 2px 5px 10px #ed7f10;
+    text-shadow: 2px 2px 10px #ed7f10;
+  }
+  50% {
+    letter-spacing: 2rem;
+    text-shadow: 0px 1px 2px rgb(124, 4, 210);
+    text-shadow: 2px 2px 10px rgb(119, 4, 202);
+    text-shadow: -1px 2px 5px rgb(119, 4, 202);
+  }
+  100% {
+    letter-spacing: 0;
+    text-shadow: 0px 1px 2px #ed7f10;
+    text-shadow: 2px 2px 10px #ed7f10;
+  }
+}
